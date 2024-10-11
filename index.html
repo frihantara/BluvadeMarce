@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bluva de Marce</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Profil Angkatan Image">
+        </div>
+    </nav>
+
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <img src="Untitled-11.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="Untitled-22.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="Untitled-33.jpg" style="width:100%">
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script src="script.js"></script>
+    
+
+    <!-- Welcome Message -->
+    <section id="welcome">
+        <img src="wel.png" alt="Welcome">
+        <h2>Mari kenali lebih dekat siapa kami!</h2>
+        <p>Selamat datang di Profil Angkatan Bluva de Marce! Di sini, Anda akan menemukan informasi dan cerita menarik dari setiap anggota kami.</p>
+    </section>
+    
+
+    <!-- Side Menu -->
+    <div id="side-menu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()">×</a>
+        <a href="#profil-angkatan" onclick="toggleMenu()">Profil Angkatan</a>
+        <a href="#filosofi-logo" onclick="toggleMenu()">Filosofi Logo</a>
+        <a href="#kita-kita" onclick="toggleMenu()">Kita-Kita</a>
+        <a href="#sosial-media" onclick="toggleMenu()">Sosial Media Kita</a>
+    </div>
+
+    <!-- Sections -->
+    <section id="profil-angkatan">
+        <img src="profil-1.jpg" alt="Profil Angkatan Image">
+        <h2>Profil Angkatan</h2>
+        <p>Angkatan Bluva de Marce hadir dengan beragam latar belakang dan visi bersama. Mari kenali lebih dekat siapa kami!</p>
+        <a href="index1.html" class="learn-more-btn">Lihat Lebih Lanjut</a>
+    </section>
+
+    <section id="filosofi-logo">
+        <img src="profil-2.jpg" alt="Filosofi Logo Image">
+        <h2>Filosofi Logo</h2>
+        <p>Logo Bluva de Marce dirancang dengan makna khusus di setiap elemennya. Mari kenali lebih dekat siapa kami!</p>
+        <a href="index2.html" class="learn-more-btn">Lihat Lebih Lanjut</a>
+    </section>
+
+    <section id="kita-kita">
+        <img src="profil-3.jpg" alt="kita-Kita Image">
+        <h2>Kita-Kita</h2>
+        <p>Jelajahi individu-individu yang membentuk Bluva de Marce dan kontribusi mereka. Mari kenali lebih dekat siapa kami!</p>
+        <a href="index3.html" class="learn-more-btn">Lihat Lebih Lanjut</a>
+    </section>
+
+    <section id="sosial-media">
+        <h2>Sosial Media Kita</h2>
+        <p>Temukan kami di platform sosial media untuk berinteraksi lebih dekat dan mengetahui lebih banyak tentang kegiatan kami.</p>
+        <!-- Contoh Sosial Media Links -->
+        <a href="https://www.instagram.com/_.bluvademarce._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img src="ig.png" alt="Instagram" class="icon">
+        <a href="https://x.com/?lang=en-id" target="_blank">
+            <img src="x.png" alt="x" class="icon">
+         <a href="https://www.tiktok.com" target="_blank">
+                <img src="tt.png" alt="Tiktok" class="icon">
+    </section>
+
+    <!-- Credit Section -->
+    <footer id="credit">
+        <p>&copy; 2024 Bluva de Marce. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

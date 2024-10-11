@@ -1,0 +1,319 @@
+/* Reset CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #595959;
+    color: #ffffff;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/circles */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Mobile Menu Styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Welcome Section */
+#welcome {
+    text-align: center; /* Mengatur teks dan gambar di tengah section */
+    padding: 20px; /* Memberikan ruang di sekitar konten */
+    background-color: #595959;
+}
+
+#welcome img {
+    max-width: 100%; /* Membuat gambar responsif, sesuai dengan lebar container */
+    height: auto; /* Menjaga rasio aspek gambar */
+    width: 300px; /* Ukuran gambar yang spesifik, bisa diubah sesuai keinginan */
+}
+
+#welcome h2 {
+    font-size: 1.2em; /* Ukuran teks judul */
+    margin-top: 5px; /* Jarak antara gambar dan judul */
+    color: #ffffff; /* Warna teks, bisa disesuaikan */
+}
+
+#welcome p {
+    font-size: 1em; /* Ukuran teks paragraf */
+    margin-top: 10px; /* Jarak antara judul dan paragraf */
+    color: #ffffff; /* Warna teks paragraf */
+    line-height: 1.6; /* Jarak antar baris teks */
+}
+
+
+/* Side Menu Styling */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2e2e2e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+}
+
+/* Sections Styling */
+section {
+    padding: 60px 20px;
+    background-color: #575757;
+    border-bottom: 1px solid #ccc;
+}
+
+section img, section h2, section p {
+    border: none;
+    box-shadow: none;
+}
+
+section img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2e2e2e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #575757;
+}
+
+/* Sosial Media Section */
+#sosial-media {
+    text-align: center;
+    background-color: #2e2e2e;
+}
+
+#sosial-media a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+#sosial-media h2 {
+    color: white;
+}
+
+#sosial-media p {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+/* Credit Section */
+#credit {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e
+}
+
+#credit p {
+    color: white;
+    font-size: 11px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    .learn-more-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #welcome h1 {
+        font-size: 36px;
+    }
+
+    .slides img {
+        height: 300px;
+    }
+
+    .prev, .next {
+        display: none; /* Hide navigation buttons on mobile */
+    }
+}
