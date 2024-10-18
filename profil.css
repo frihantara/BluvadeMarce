@@ -1,0 +1,230 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* Navbar berwarna putih */
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk memisahkan navbar */
+  position: sticky; /* Navbar tetap di atas */
+  top: 0; /* Navbar selalu di atas */
+  z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+  width: 100%; /* Memastikan navbar full-width */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Memusatkan navbar pada layar besar */
+}
+
+.navbar .logo a {
+  color: #000000; /* Teks logo berwarna hitam */
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold; /* Menjadikan logo tebal */
+  font-style: italic; /* Menjadikan logo miring */
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  color: #000000; /* Teks link navbar berwarna hitam */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar .menu-icon {
+  display: none; /* Ikon menu hanya muncul pada mobile */
+  color: #000000; /* Ikon menu berwarna hitam */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .nav-links li {
+    margin: 15px 0;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: url("DSC06053.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan pada teks */
+}
+
+/* Gradasi di bawah hero section */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/* Container */
+.container-post {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.container-post h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.container-post h2 {
+  font-size: 28px;
+  color: #2980b9;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container-post h3 {
+  font-size: 22px;
+  color: #3498db;
+}
+
+/* List */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Text */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-left: 4px solid #2980b9;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Section */
+section {
+  margin-bottom: 40px;
+}
+
+/* Profile Info List */
+.profile-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.profile-info ul li {
+  margin-bottom: 5px;
+}
+
+.profile-info strong {
+  color: #2c3e50;
+}
+
+/* Footer */
+.footer {
+  background-color: #808080; /* Footer berwarna abu-abu */
+  color: white; /* Teks footer berwarna putih */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Responsive for other elements */
+@media (max-width: 768px) {
+  .container-post {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  /* Ukuran Teks Lebih Kecil di Handphone */
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,252 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* Navbar berwarna putih */
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk memisahkan navbar */
+  position: sticky; /* Navbar tetap di atas */
+  top: 0; /* Navbar selalu di atas */
+  z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  color: #000000; /* Teks logo berwarna hitam */
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold; /* Menjadikan logo tebal */
+  font-style: italic; /* Menjadikan logo miring */
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  color: #000000; /* Teks link navbar berwarna hitam */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar .menu-icon {
+  display: none;
+  color: #000000; /* Ikon menu berwarna hitam */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar .nav-links.active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar .nav-links.active li {
+  margin: 15px 0; /* Menambahkan jarak antar-menu di hamburger */
+}
+
+/* Hero Section */
+.hero {
+  background: url("DSC09197.JPG") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 20px; /* Menambah padding agar teks tidak nabrak */
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan pada teks */
+}
+
+.hero p {
+  font-size: 24px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada teks */
+}
+
+/* Gradasi di bawah hero section */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/* Menu Icons */
+.menu-icons {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.menu-icons .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.menu-icons .icon {
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.menu-icons .icon i {
+  font-size: 40px;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.menu-icons .icon a {
+  text-decoration: none;
+  color: #333; /* Teks ikon bisa diklik */
+}
+
+.menu-icons .icon p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Sambutan Ketua Angkatan */
+.welcome {
+  padding: 40px 0;
+}
+
+.welcome .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Jarak sisi kiri dan kanan */
+  flex-direction: column; /* Mengubah arah flex menjadi kolom untuk handphone */
+}
+
+.welcome .foto-kepsek {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px; /* Mengubah margin untuk menjauhkan foto dari sambutan */
+}
+
+.welcome .sambutan {
+  max-width: 600px;
+  text-align: justify; /* Justifikasi teks agar rapi */
+  padding: 0 20px; /* Menambah padding agar tidak mentok */
+}
+
+.welcome .sambutan h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center; /* Judul rata tengah */
+}
+
+.welcome .sambutan p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: #808080; /* Footer berwarna abu-abu */
+  color: white; /* Teks footer berwarna putih */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+  }
+
+  .welcome .container {
+    flex-direction: column; /* Tetap menjadi kolom di handphone */
+    text-align: center; /* Rata tengah */
+  }
+
+  .welcome .foto-kepsek {
+    margin-bottom: 20px; /* Menambah jarak di bawah foto */
+  }
+
+  /* Ikon tetap horizontal di layar kecil */
+  .menu-icons .container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .menu-icons .icon {
+    flex: none;
+    min-width: 25%;
+  }
+
+  /* Ukuran Teks Lebih Kecil di Handphone */
+  .hero h1 {
+    font-size: 32px; /* Ukuran teks hero lebih kecil di HP */
+  }
+
+  .hero p {
+    font-size: 16px; /* Ukuran teks deskripsi lebih kecil di HP */
+  }
+
+  .menu-icons .icon p {
+    font-size: 14px; /* Ukuran teks ikon lebih kecil di HP */
+  }
+
+  .welcome .sambutan h2 {
+    font-size: 24px; /* Ukuran judul sambutan lebih kecil di HP */
+  }
+
+  .welcome .sambutan p {
+    font-size: 14px; /* Ukuran teks sambutan lebih kecil di HP */
+    text-align: justify; /* Teks tetap rata tengah */
+  }
+
+  .footer p {
+    font-size: 12px; /* Ukuran teks footer lebih kecil di HP */
+  }
+}

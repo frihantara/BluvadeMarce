@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Angkatan Bluva de Marce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Bluva de Marce</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="filosofi.html">Filosofi</a></li>
+                <li><a href="anggota.html">Anggota</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Selamat Datang di Angkatan Bluva de Marce</h1>
+    </section>
+
+    <section class="menu-icons">
+        <div class="container">
+            <div class="icon">
+                <i class="fas fa-user"></i>
+                <p>Profil</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-book"></i>
+                <p>Filosofi</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-users"></i>
+                <p>Anggota</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome">
+        <div class="container">
+            <img src="IMG_20241018_181847.jpg" alt="Foto Ketua Angkatan" class="foto-kepsek">
+            <div class="sambutan">
+                <h2>Prakata Ketua Angkatan</h2>
+                <p>Selamat datang di website resmi angkatan Bluva de Marce. Kami berkomitmen untuk membangun komunitas yang solid dan saling mendukung. Di sini, kami akan berbagi informasi, pengalaman, dan perjalanan kami bersama. Terima kasih atas kunjungan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Angkatan Bluva de Marce. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
