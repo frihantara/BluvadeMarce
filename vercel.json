@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/Beranda", "destination": "/index.html" },
+    { "source": "/Profile-Angkatan", "destination": "/profil.html" },
+    { "source": "/Filosofi-Logo", "destination": "/filosofi.html" },
+    { "source": "/Anggota-Angkatan", "destination": "/anggota.html" },
+  ]
+}
