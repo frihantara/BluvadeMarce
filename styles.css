@@ -35,7 +35,7 @@
   display: flex;
 }
 
-.navbar .nav-links li:hover {
+.navbar .nav-links li a:hover {
   text-decoration: underline;
 }
 
