@@ -35,6 +35,10 @@
   display: flex;
 }
 
+.navbar .nav-links:hover {
+  text-decoration: underline;
+}
+
 .navbar .nav-links li {
   margin-left: 20px;
 }
