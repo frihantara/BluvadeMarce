@@ -39,6 +39,10 @@
   margin-left: 20px;
 }
 
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
 .navbar .nav-links a {
   color: #000000; /* Teks link navbar berwarna hitam */
   text-decoration: none;
